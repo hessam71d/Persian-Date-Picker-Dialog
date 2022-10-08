@@ -3,6 +3,7 @@ package ir.hamsaa.persiandatepicker.view;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.TextView;
@@ -57,6 +58,8 @@ public class PersianNumberPicker extends NumberPicker {
         if (view instanceof TextView) {
             if (PersianDatePickerDialog.typeFace != null)
                 ((TextView) view).setTypeface(PersianDatePickerDialog.typeFace);
+                ((TextView) view).setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+
         }
     }
 
